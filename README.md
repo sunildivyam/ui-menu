@@ -1,10 +1,10 @@
 # ui-menu
 ui-menu is an angular directive for aside navigation Menu
 ## Installation
-###Installing ui-menu via npm
+### Installing ui-menu via npm
 **`npm install ui-menu`**
 
-##Usage
+## Usage
 Include the ui-menu.js or ui-menu.min.js in your application using any of the ways e.g.
 include it in your application's index.html:
 ```
