@@ -1,0 +1,85 @@
+.ui-menu-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.ui-menu-container .level-container {
+  background-color: #000000;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.ui-menu-container .level-container.root-level {
+  position: fixed;
+  left: 0px;
+  margin-top: 0px;
+  z-index: 2;
+}
+.ui-menu-container .level-container > ul {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.ui-menu-container .level-container > ul > li {
+  min-width: 150px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+.ui-menu-container .level-container > ul > li:hover,
+.ui-menu-container .level-container > ul > li.hover {
+  background-color: #565656;
+}
+.ui-menu-container .level-container > ul > li .expand-arrow {
+  float: right;
+}
+.ui-menu-container .level-container > ul > li .expand-arrow:after {
+  content: '>';
+  font-weight: 900;
+  font-family: monospace;
+}
+.ui-menu-container .level-container .back-btn {
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  margin: 5px;
+  color: #ffffff;
+  background: #87bf64;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.ui-menu-container .ui-menu-backdrop {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-top: 0px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.ui-menu-contents-target {
+  position: relative;
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -ms-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+}

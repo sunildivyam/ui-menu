@@ -1,0 +1,26 @@
+{
+  "name": "ui-menu",
+  "version": "1.0.0",
+  "description": "ui-menu is an angular directive for advance Side Menu",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "eslint-config-defaults": "^9.0.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-eslint": "^2.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunil Kumar",
+  "license": "ISC"
+}

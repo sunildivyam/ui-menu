@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>UI-Menu Examples</title>
+	<link rel="stylesheet" type="text/css" href="../dist/ui-menu.css">
+	<style type="text/css">
+		.action-bar {
+			display: inline-block;
+			width: 30px;
+			width: 30px;
+		}
+
+		.action-bar>span {
+			display: block;
+			border-top: 5px solid darkgray;
+			padding: 3px;
+		}
+
+		.page-title {
+			display: inline-block;
+			padding: 10px;
+			margin: 0px;
+		}
+		#page-content {
+			margin: 0px;
+			padding: 0px 15px;
+		}
+	</style>
+</head>
+<body ng-app="uiMenuExamples" ng-controller="appController">
+	<div class="app-header">
+		<a href="#" id="main-menu-btn" class="action-bar">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<h1 class="page-title">UI Menu Examples<h1>
+	</div>
+
+	<ui-menu
+		menu-items="mainMenu"
+		back-btn-text="back"
+		target-btn="#main-menu-btn"
+		menu-width="50%"
+		menu-content-target="#page-content"
+		push-menu-content-target="true"
+		distance-from-top="60px"
+		on-menu-item-click="onMenuSelect">
+	</ui-menu>
+
+	<div id="page-content">
+		<h1>UI Menu </h1>
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+	</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+
+<script type="text/javascript" src="../dist/ui-menu.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
