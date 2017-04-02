@@ -1,6 +1,6 @@
 {
   "name": "ui-menu",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "ui-menu is an angular directive for advance Side Menu with custom templates for Menu items",
   "main": "./dist/ui-menu.js",
   "style": "./dist/ui-menu.css",
