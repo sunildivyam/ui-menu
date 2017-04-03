@@ -16,10 +16,10 @@
   right: 0px;
   width: 0px;
   height: 100%;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
 }
 .ui-menu-container .level-container.root-level {
   position: fixed;
@@ -38,6 +38,7 @@
   padding: 15px;
   border-bottom: 1px solid grey;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .ui-menu-container .level-container > ul > li:hover,
 .ui-menu-container .level-container > ul > li.hover {
