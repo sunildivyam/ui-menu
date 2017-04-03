@@ -90,28 +90,51 @@ The directive accepts following attributes (scope variables):
 	}]
 ```
 - **backBtnText:**
+
 default is "back", set the back button's label text.
-- **targetBtn: **
+
+- **targetBtn:**
+
 This is the element selector of the button (html tag) which shows/hides the Main Menu.
-- ** onMenuItemClick: **
+
+- **onMenuItemClick:**
+
 This is Click event fired when a menu Item is clicked. This could be a scope method (event handler) of your controller.
+
 - **menuWidth:**
+
 This is the width of the Menu container and can be given in %, px eg. ```80%, 200px```, means in any CSS units.
--**menuContentTarget:**
+
+- **menuContentTarget:**
+
 This is element selector on Page which needs to be pushed to right when menu is visible.
--**distanceFromTop:**
+
+- **distanceFromTop:**
+
 In case if you want to show your menu from a certain distance from the top, then set distanceFromTop to certain height eg. ```60px```
--**pushMenuContentTarget**
+
+- **pushMenuContentTarget**
+
 If true, pushes the Content target Area (menuContentTarget) to right when menu is visible, else Menu will float/overlap over the content area.
+
 
 # Build ui-menu
 If you want to do more of your customisation to the existing code, here are the steps to build the ui-menu project:
 
--**Step 1:**
+- **Step 1:**
+
 Do your code changes to ```ui-menu.js``` and ```styles/ui-menu.less```
--**Step 2:**
+
+- **Step 2:**
+
 Run the gulp build ```gulp build``` from the ui-menu root folder.
 
+
 I am sure you would have installed all the dev dependencies before running the build, if not run ```npm install``` from ui-menu root folder and ```gulp-cli``` is installed as a global node module.
+
+# Demo
+You can find the ui-menu demo in ```docs/index.html```
+
+
 
 I hope you find it useful. Thanks.
