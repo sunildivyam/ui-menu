@@ -64,7 +64,13 @@ That's all. Now just add it on your application page,
 The directive accepts following attributes (scope variables):
 
 - **menuItems:**
-	This is an array of menuItems in the format given below and menuItems forms a tree structure up to any level.
+	This is an array of menuItems in the format given below and menuItems forms a tree structure up to any level. There is a support for three types of Menu Item content.
+	- **title**: Only ```title``` is displayed as a content of Menu Items
+	- **template**: inline HTML template can be displayed as a content of Menu Items. The scope is avaialable to this template.
+	- **templateUrl**: a template url or template name from template cache can be given and can be rendered as Menu Item content. Here also the scope is available.
+
+**Note**: above three properties of the menuItem allows you to have flexibilty to have any custom HTML (with scope) as content of Menu Item.
+
 ``` javascript
 [{
 		name: 'level1-1',
@@ -83,12 +89,29 @@ The directive accepts following attributes (scope variables):
 		template: "Item's HTML markup"
 	}]
 ```
-```
-                backBtnText: '@',           //
-                targetBtn: '@',             // This is the reference of button (html tag) which show/hide the Menu
-                onMenuItemClick: '=',
-                menuWidth: '@',             // this can be in % or in px eg. 80%, 200px;
-                menuContentTarget:  '@',    // Element selector on Page which needs to be pushed whne menu is visible
-                distanceFromTop: '@',       // distance of Menu and Content Area from body top eg. 60px;
-                pushMenuContentTarget: '='  // if true, pushes the Content target Area on Menu Visible
-```
+- **backBtnText:**
+default is "back", set the back button's label text.
+- **targetBtn: **
+This is the element selector of the button (html tag) which shows/hides the Main Menu.
+- ** onMenuItemClick: **
+This is Click event fired when a menu Item is clicked. This could be a scope method (event handler) of your controller.
+- **menuWidth:**
+This is the width of the Menu container and can be given in %, px eg. ```80%, 200px```, means in any CSS units.
+-**menuContentTarget:**
+This is element selector on Page which needs to be pushed to right when menu is visible.
+-**distanceFromTop:**
+In case if you want to show your menu from a certain distance from the top, then set distanceFromTop to certain height eg. ```60px```
+-**pushMenuContentTarget**
+If true, pushes the Content target Area (menuContentTarget) to right when menu is visible, else Menu will float/overlap over the content area.
+
+# Build ui-menu
+If you want to do more of your customisation to the existing code, here are the steps to build the ui-menu project:
+
+- **Step 1: **
+Do your code changes to ```ui-menu.js``` and ```styles/ui-menu.less```
+- **Step 2: **
+Run the gulp build ```gulp build``` from the ui-menu root folder.
+
+I am sure you would have installed all the dev dependencies before running the build, if not run ```npm install``` from ui-menu root folder and ```gulp-cli``` is installed as a global node module.
+
+I hope you find it useful. Thanks.
