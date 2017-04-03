@@ -107,9 +107,9 @@ If true, pushes the Content target Area (menuContentTarget) to right when menu i
 # Build ui-menu
 If you want to do more of your customisation to the existing code, here are the steps to build the ui-menu project:
 
-- **Step 1: **
+-**Step 1:**
 Do your code changes to ```ui-menu.js``` and ```styles/ui-menu.less```
-- **Step 2: **
+-**Step 2:**
 Run the gulp build ```gulp build``` from the ui-menu root folder.
 
 I am sure you would have installed all the dev dependencies before running the build, if not run ```npm install``` from ui-menu root folder and ```gulp-cli``` is installed as a global node module.
