@@ -16,7 +16,6 @@ angular.module('uiMenuExamples', ['ui.menu'])
 	},{
 		name: 'level1-2',
 		title: 'level1 Menu Item 2',
-		template: "Item's HTML markup",
 		menuItems: [{
 			name: 'level2-1',
 			title: 'Menu Item 1',
@@ -24,16 +23,13 @@ angular.module('uiMenuExamples', ['ui.menu'])
 		}, {
 			name: 'level2-2',
 			title: 'Menu Item 2',
-			template: "Item's HTML markup",
 			menuItems: [{
 				name: 'level3-1',
 				title: 'Level 3 Menu Item 1',
-				template: "Item's HTML markup"
 			},
 			{
 				name: 'level3-2',
 				title: 'Level 3 Menu Item 2',
-				template: "Item's HTML markup"
 			}]
 		}]
 	},

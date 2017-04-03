@@ -29,7 +29,7 @@
             '<div class="menu-item-content" ng-if="!menuItem.templateUrl && menuItem.template" compile-template="menuItem.template"></div>',
             '<div class="menu-item-content" ng-if="menuItem.templateUrl" ngInclude="menuItem.templateUrl"></div>',
             '<span ng-bind="menuItem.title" ng-if="!menuItem.template && !menuItem.templateUrl"></span>',
-            '<span class="expand-arrow" ng-if="!menuItem.template && !menuItem.templateUrl"></span>',
+            '<span class="expand-arrow" ng-if="(menuItem.menuItems && menuItem.menuItems.length) && !menuItem.template && !menuItem.templateUrl"></span>',
             '<div class="level-container" ng-if="menuItem.menuItems" ng-click="levelContainerClick($event)">',
                 '<a href="#" class="back-btn" ng-click="menuBackClick($event)">{{backBtnText || "<<"}}</a>',
                 '<ul>',
