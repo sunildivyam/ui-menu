@@ -25,11 +25,11 @@ angular.module('uiMenuExamples', ['ui.menu'])
 			title: 'Menu Item 2',
 			menuItems: [{
 				name: 'level3-1',
-				title: 'Level 3 Menu Item 1',
+				title: 'Level 3 Menu Item 1'
 			},
 			{
 				name: 'level3-2',
-				title: 'Level 3 Menu Item 2',
+				title: 'Level 3 Menu Item 2'
 			}]
 		}]
 	},
